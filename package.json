@@ -1,0 +1,37 @@
+{
+  "name": "well-done",
+  "version": "1.0.0",
+  "description": "Generate random congratulations",
+  "author": "George Thomas",
+  "license": "MIT",
+  "homepage": "https://github.com/mgthomas99/well-done#readme",
+  "main": "dist/index.js",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^4.0.2",
+    "npm-run-all": "^4.1.2",
+    "typescript": "^2.8.1"
+  },
+  "dependencies": {
+    "random-item": "^1.0.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "clean:dist": "rimraf \"dist/\"",
+    "clean": "npm-run-all -s \"clean:dist\"",
+    "test": "echo \"Error: no test specified\"",
+    "prepublish": "npm-run-all -s \"clean\" \"build\" \"test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgthomas99/well-done.git"
+  },
+  "keywords": [
+    "good",
+    "random",
+    "string"
+  ],
+  "bugs": {
+    "url": "https://github.com/mgthomas99/well-done/issues"
+  }
+}
